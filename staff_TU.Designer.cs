@@ -41,6 +41,8 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -103,6 +105,8 @@
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.button5);
+            this.panel5.Controls.Add(this.textBox1);
             this.panel5.Controls.Add(this.button4);
             this.panel5.Controls.Add(this.button3);
             this.panel5.Controls.Add(this.button2);
@@ -192,6 +196,26 @@
             this.label2.Text = "SD Negeri 1 Nanang";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(615, 29);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(270, 20);
+            this.textBox1.TabIndex = 4;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.SteelBlue;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(905, 21);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(100, 34);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "Cari Data";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
             // staff_TU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +236,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -233,5 +258,7 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button5;
     }
 }
