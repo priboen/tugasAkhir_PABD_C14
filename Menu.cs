@@ -16,5 +16,13 @@ namespace tugasAkhir
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (staff_TU stu = new staff_TU())
+            {
+                stu.ShowDialog();
+            }
+        }
     }
 }

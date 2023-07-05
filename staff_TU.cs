@@ -21,5 +21,13 @@ namespace tugasAkhir
         {
             this.Dispose();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (add_staff add_tu = new add_staff())
+            {
+                add_tu.ShowDialog();
+            }
+        }
     }
 }
