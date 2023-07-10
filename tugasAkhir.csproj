@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add_murid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_murid.Designer.cs">
+      <DependentUpon>add_murid.cs</DependentUpon>
+    </Compile>
     <Compile Include="add_staff.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="add_staff.Designer.cs">
       <DependentUpon>add_staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hapus_staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hapus_staff.Designer.cs">
+      <DependentUpon>hapus_staff.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -72,8 +84,24 @@
     <Compile Include="staff_TU.Designer.cs">
       <DependentUpon>staff_TU.cs</DependentUpon>
     </Compile>
+    <Compile Include="tugasAkhirDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tugasAkhirDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tugasAkhirDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tugasAkhirDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_murid.resx">
+      <DependentUpon>add_murid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="add_staff.resx">
       <DependentUpon>add_staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hapus_staff.resx">
+      <DependentUpon>hapus_staff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -103,6 +131,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="tugasAkhirDataSet.xsc">
+      <DependentUpon>tugasAkhirDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tugasAkhirDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tugasAkhirDataSet.xss">
+      <DependentUpon>tugasAkhirDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet1.xsc">
+      <DependentUpon>tugasAkhirDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tugasAkhirDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tugasAkhirDataSet1.xss">
+      <DependentUpon>tugasAkhirDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

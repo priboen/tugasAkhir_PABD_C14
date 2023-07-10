@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -42,19 +43,18 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
+            this.NIPtxt = new System.Windows.Forms.TextBox();
+            this.namaTUtxt = new System.Windows.Forms.TextBox();
+            this.hpTUtxt = new System.Windows.Forms.TextBox();
+            this.emailTUtxt = new System.Windows.Forms.TextBox();
+            this.desaTUtxt = new System.Windows.Forms.TextBox();
+            this.jalanTUtxt = new System.Windows.Forms.TextBox();
+            this.kecamatanTUtxt = new System.Windows.Forms.TextBox();
+            this.kodeposTUtxt = new System.Windows.Forms.TextBox();
+            this.kotaTUtxt = new System.Windows.Forms.TextBox();
+            this.savebtn = new System.Windows.Forms.Button();
+            this.ubahbtn = new System.Windows.Forms.Button();
+            this.clearbtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +68,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(739, 54);
             this.panel1.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label10.Location = new System.Drawing.Point(179, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(390, 33);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Tambah/Ubah Staff Tata Usaha";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
@@ -155,7 +169,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(22, 287);
+            this.label5.Location = new System.Drawing.Point(22, 250);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 28);
             this.label5.TabIndex = 8;
@@ -165,7 +179,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(22, 251);
+            this.label6.Location = new System.Drawing.Point(22, 287);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 28);
             this.label6.TabIndex = 9;
@@ -201,142 +215,132 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "Kode Pos";
             // 
-            // textBox1
+            // NIPtxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(286, 105);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(327, 20);
-            this.textBox1.TabIndex = 13;
+            this.NIPtxt.Location = new System.Drawing.Point(286, 105);
+            this.NIPtxt.MaxLength = 18;
+            this.NIPtxt.Name = "NIPtxt";
+            this.NIPtxt.Size = new System.Drawing.Size(327, 20);
+            this.NIPtxt.TabIndex = 13;
             // 
-            // textBox2
+            // namaTUtxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(286, 146);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(327, 20);
-            this.textBox2.TabIndex = 14;
+            this.namaTUtxt.Location = new System.Drawing.Point(286, 146);
+            this.namaTUtxt.Name = "namaTUtxt";
+            this.namaTUtxt.Size = new System.Drawing.Size(327, 20);
+            this.namaTUtxt.TabIndex = 14;
             // 
-            // textBox3
+            // hpTUtxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(286, 182);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(327, 20);
-            this.textBox3.TabIndex = 15;
+            this.hpTUtxt.Location = new System.Drawing.Point(286, 182);
+            this.hpTUtxt.Name = "hpTUtxt";
+            this.hpTUtxt.Size = new System.Drawing.Size(327, 20);
+            this.hpTUtxt.TabIndex = 15;
             // 
-            // textBox4
+            // emailTUtxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(286, 215);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(327, 20);
-            this.textBox4.TabIndex = 16;
+            this.emailTUtxt.Location = new System.Drawing.Point(286, 215);
+            this.emailTUtxt.Name = "emailTUtxt";
+            this.emailTUtxt.Size = new System.Drawing.Size(327, 20);
+            this.emailTUtxt.TabIndex = 16;
             // 
-            // textBox5
+            // desaTUtxt
             // 
-            this.textBox5.Location = new System.Drawing.Point(286, 251);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(327, 20);
-            this.textBox5.TabIndex = 17;
+            this.desaTUtxt.Location = new System.Drawing.Point(286, 287);
+            this.desaTUtxt.Name = "desaTUtxt";
+            this.desaTUtxt.Size = new System.Drawing.Size(327, 20);
+            this.desaTUtxt.TabIndex = 17;
             // 
-            // textBox6
+            // jalanTUtxt
             // 
-            this.textBox6.Location = new System.Drawing.Point(286, 287);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(327, 20);
-            this.textBox6.TabIndex = 18;
+            this.jalanTUtxt.Location = new System.Drawing.Point(286, 250);
+            this.jalanTUtxt.Name = "jalanTUtxt";
+            this.jalanTUtxt.Size = new System.Drawing.Size(327, 20);
+            this.jalanTUtxt.TabIndex = 18;
             // 
-            // textBox7
+            // kecamatanTUtxt
             // 
-            this.textBox7.Location = new System.Drawing.Point(286, 322);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(327, 20);
-            this.textBox7.TabIndex = 19;
+            this.kecamatanTUtxt.Location = new System.Drawing.Point(286, 322);
+            this.kecamatanTUtxt.Name = "kecamatanTUtxt";
+            this.kecamatanTUtxt.Size = new System.Drawing.Size(327, 20);
+            this.kecamatanTUtxt.TabIndex = 19;
             // 
-            // textBox8
+            // kodeposTUtxt
             // 
-            this.textBox8.Location = new System.Drawing.Point(286, 358);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(327, 20);
-            this.textBox8.TabIndex = 20;
+            this.kodeposTUtxt.Location = new System.Drawing.Point(286, 358);
+            this.kodeposTUtxt.Name = "kodeposTUtxt";
+            this.kodeposTUtxt.Size = new System.Drawing.Size(327, 20);
+            this.kodeposTUtxt.TabIndex = 20;
             // 
-            // textBox9
+            // kotaTUtxt
             // 
-            this.textBox9.Location = new System.Drawing.Point(286, 396);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(327, 20);
-            this.textBox9.TabIndex = 21;
+            this.kotaTUtxt.Location = new System.Drawing.Point(286, 396);
+            this.kotaTUtxt.Name = "kotaTUtxt";
+            this.kotaTUtxt.Size = new System.Drawing.Size(327, 20);
+            this.kotaTUtxt.TabIndex = 21;
             // 
-            // button2
+            // savebtn
             // 
-            this.button2.BackColor = System.Drawing.Color.SteelBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(131, 471);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 43);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = false;
+            this.savebtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.savebtn.FlatAppearance.BorderSize = 0;
+            this.savebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.savebtn.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savebtn.ForeColor = System.Drawing.Color.White;
+            this.savebtn.Location = new System.Drawing.Point(131, 471);
+            this.savebtn.Name = "savebtn";
+            this.savebtn.Size = new System.Drawing.Size(127, 43);
+            this.savebtn.TabIndex = 22;
+            this.savebtn.Text = "Save";
+            this.savebtn.UseVisualStyleBackColor = false;
+            this.savebtn.Click += new System.EventHandler(this.savebtn_Click);
             // 
-            // button3
+            // ubahbtn
             // 
-            this.button3.BackColor = System.Drawing.Color.SteelBlue;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(286, 471);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(127, 43);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "Clear";
-            this.button3.UseVisualStyleBackColor = false;
+            this.ubahbtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.ubahbtn.FlatAppearance.BorderSize = 0;
+            this.ubahbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ubahbtn.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ubahbtn.ForeColor = System.Drawing.Color.White;
+            this.ubahbtn.Location = new System.Drawing.Point(286, 471);
+            this.ubahbtn.Name = "ubahbtn";
+            this.ubahbtn.Size = new System.Drawing.Size(127, 43);
+            this.ubahbtn.TabIndex = 23;
+            this.ubahbtn.Text = "Ubah";
+            this.ubahbtn.UseVisualStyleBackColor = false;
+            this.ubahbtn.Click += new System.EventHandler(this.ubahbtn_Click);
             // 
-            // button4
+            // clearbtn
             // 
-            this.button4.BackColor = System.Drawing.Color.SteelBlue;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(442, 471);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(127, 43);
-            this.button4.TabIndex = 24;
-            this.button4.Text = "Exit";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label10.Location = new System.Drawing.Point(215, 9);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(318, 33);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "Tambah Staff Tata Usaha";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.clearbtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.clearbtn.FlatAppearance.BorderSize = 0;
+            this.clearbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearbtn.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearbtn.ForeColor = System.Drawing.Color.White;
+            this.clearbtn.Location = new System.Drawing.Point(442, 471);
+            this.clearbtn.Name = "clearbtn";
+            this.clearbtn.Size = new System.Drawing.Size(127, 43);
+            this.clearbtn.TabIndex = 24;
+            this.clearbtn.Text = "Clear";
+            this.clearbtn.UseVisualStyleBackColor = false;
+            this.clearbtn.Click += new System.EventHandler(this.exitbtn_Click);
             // 
             // add_staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(739, 552);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.clearbtn);
+            this.Controls.Add(this.ubahbtn);
+            this.Controls.Add(this.savebtn);
+            this.Controls.Add(this.kotaTUtxt);
+            this.Controls.Add(this.kodeposTUtxt);
+            this.Controls.Add(this.kecamatanTUtxt);
+            this.Controls.Add(this.jalanTUtxt);
+            this.Controls.Add(this.desaTUtxt);
+            this.Controls.Add(this.emailTUtxt);
+            this.Controls.Add(this.hpTUtxt);
+            this.Controls.Add(this.namaTUtxt);
+            this.Controls.Add(this.NIPtxt);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -377,18 +381,18 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox NIPtxt;
+        private System.Windows.Forms.TextBox namaTUtxt;
+        private System.Windows.Forms.TextBox hpTUtxt;
+        private System.Windows.Forms.TextBox emailTUtxt;
+        private System.Windows.Forms.TextBox desaTUtxt;
+        private System.Windows.Forms.TextBox jalanTUtxt;
+        private System.Windows.Forms.TextBox kecamatanTUtxt;
+        private System.Windows.Forms.TextBox kodeposTUtxt;
+        private System.Windows.Forms.TextBox kotaTUtxt;
+        private System.Windows.Forms.Button savebtn;
+        private System.Windows.Forms.Button ubahbtn;
+        private System.Windows.Forms.Button clearbtn;
         private System.Windows.Forms.Label label10;
     }
 }

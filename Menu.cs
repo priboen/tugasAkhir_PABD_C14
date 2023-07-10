@@ -22,7 +22,13 @@ namespace tugasAkhir
             using (staff_TU stu = new staff_TU())
             {
                 stu.ShowDialog();
+                this.Hide();
             }
+        }
+
+        private void clsbtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

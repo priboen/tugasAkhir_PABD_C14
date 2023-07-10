@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.clsbtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -48,25 +48,26 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.clsbtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(950, 61);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // clsbtn
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(910, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(28, 28);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
+            this.clsbtn.FlatAppearance.BorderSize = 0;
+            this.clsbtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.clsbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clsbtn.ForeColor = System.Drawing.Color.White;
+            this.clsbtn.Location = new System.Drawing.Point(910, 12);
+            this.clsbtn.Name = "clsbtn";
+            this.clsbtn.Size = new System.Drawing.Size(28, 28);
+            this.clsbtn.TabIndex = 3;
+            this.clsbtn.Text = "X";
+            this.clsbtn.UseVisualStyleBackColor = true;
+            this.clsbtn.Click += new System.EventHandler(this.clsbtn_Click);
             // 
             // panel2
             // 
@@ -218,7 +219,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button clsbtn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
