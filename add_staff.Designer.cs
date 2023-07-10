@@ -199,7 +199,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(22, 396);
+            this.label8.Location = new System.Drawing.Point(22, 358);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(109, 28);
             this.label8.TabIndex = 11;
@@ -209,7 +209,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(22, 358);
+            this.label9.Location = new System.Drawing.Point(22, 398);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(84, 28);
             this.label9.TabIndex = 12;
@@ -267,14 +267,14 @@
             // 
             // kodeposTUtxt
             // 
-            this.kodeposTUtxt.Location = new System.Drawing.Point(286, 358);
+            this.kodeposTUtxt.Location = new System.Drawing.Point(286, 398);
             this.kodeposTUtxt.Name = "kodeposTUtxt";
             this.kodeposTUtxt.Size = new System.Drawing.Size(327, 20);
             this.kodeposTUtxt.TabIndex = 20;
             // 
             // kotaTUtxt
             // 
-            this.kotaTUtxt.Location = new System.Drawing.Point(286, 396);
+            this.kotaTUtxt.Location = new System.Drawing.Point(286, 362);
             this.kotaTUtxt.Name = "kotaTUtxt";
             this.kotaTUtxt.Size = new System.Drawing.Size(327, 20);
             this.kotaTUtxt.TabIndex = 21;

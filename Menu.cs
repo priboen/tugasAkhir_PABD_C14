@@ -30,5 +30,13 @@ namespace tugasAkhir
         {
             Application.Exit();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            using (siswa sw = new siswa()) {
+                sw.ShowDialog();
+                this.Hide();
+            }
+        }
     }
 }
