@@ -170,7 +170,6 @@
             this.passwordTxt.PasswordChar = '*';
             this.passwordTxt.Size = new System.Drawing.Size(200, 13);
             this.passwordTxt.TabIndex = 10;
-            this.passwordTxt.Text = "v";
             // 
             // label3
             // 
