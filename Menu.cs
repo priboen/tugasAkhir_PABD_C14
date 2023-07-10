@@ -38,5 +38,19 @@ namespace tugasAkhir
                 this.Hide();
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Guru gr = new Guru();
+            gr.Show();
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            mata_pelajaran mp = new mata_pelajaran();
+            mp.Show();
+            this.Close();
+        }
     }
 }

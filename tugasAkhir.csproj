@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addMataPel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addMataPel.Designer.cs">
+      <DependentUpon>addMataPel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_guru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_guru.Designer.cs">
+      <DependentUpon>add_guru.cs</DependentUpon>
+    </Compile>
     <Compile Include="add_murid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,11 +70,29 @@
     <Compile Include="add_staff.Designer.cs">
       <DependentUpon>add_staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="delete_guru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_guru.Designer.cs">
+      <DependentUpon>delete_guru.cs</DependentUpon>
+    </Compile>
     <Compile Include="delete_siswacs.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="delete_siswacs.Designer.cs">
       <DependentUpon>delete_siswacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guru.Designer.cs">
+      <DependentUpon>Guru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hapus_mapel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hapus_mapel.Designer.cs">
+      <DependentUpon>hapus_mapel.cs</DependentUpon>
     </Compile>
     <Compile Include="hapus_staff.cs">
       <SubType>Form</SubType>
@@ -75,6 +105,12 @@
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mata_pelajaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mata_pelajaran.Designer.cs">
+      <DependentUpon>mata_pelajaran.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -111,20 +147,48 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>tugasAkhirDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="tugasAkhirDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tugasAkhirDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tugasAkhirDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tugasAkhirDataSet4.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addMataPel.resx">
+      <DependentUpon>addMataPel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_guru.resx">
+      <DependentUpon>add_guru.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="add_murid.resx">
       <DependentUpon>add_murid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="add_staff.resx">
       <DependentUpon>add_staff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="delete_guru.resx">
+      <DependentUpon>delete_guru.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="delete_siswacs.resx">
       <DependentUpon>delete_siswacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guru.resx">
+      <DependentUpon>Guru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hapus_mapel.resx">
+      <DependentUpon>hapus_mapel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hapus_staff.resx">
       <DependentUpon>hapus_staff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mata_pelajaran.resx">
+      <DependentUpon>mata_pelajaran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -186,6 +250,28 @@
     </None>
     <None Include="tugasAkhirDataSet2.xss">
       <DependentUpon>tugasAkhirDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet3.xsc">
+      <DependentUpon>tugasAkhirDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tugasAkhirDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tugasAkhirDataSet3.xss">
+      <DependentUpon>tugasAkhirDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet4.xsc">
+      <DependentUpon>tugasAkhirDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tugasAkhirDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tugasAkhirDataSet4.xss">
+      <DependentUpon>tugasAkhirDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

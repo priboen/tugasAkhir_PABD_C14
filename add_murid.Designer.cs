@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.closeBtn = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.closeBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.NISNtxt = new System.Windows.Forms.TextBox();
             this.namaSiswatxt = new System.Windows.Forms.TextBox();
@@ -59,7 +59,6 @@
             this.NIPtxt = new System.Windows.Forms.Label();
             this.saveBtn = new System.Windows.Forms.Button();
             this.updateBtn = new System.Windows.Forms.Button();
-            this.clearBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +72,35 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 57);
             this.panel1.TabIndex = 0;
+            // 
+            // closeBtn
+            // 
+            this.closeBtn.FlatAppearance.BorderSize = 0;
+            this.closeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeBtn.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeBtn.ForeColor = System.Drawing.Color.White;
+            this.closeBtn.Location = new System.Drawing.Point(758, 12);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(30, 30);
+            this.closeBtn.TabIndex = 7;
+            this.closeBtn.Text = "X";
+            this.closeBtn.UseVisualStyleBackColor = true;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label10.Location = new System.Drawing.Point(275, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(262, 33);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Tambah/Ubah Siswa";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -100,35 +128,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(790, 5);
             this.panel4.TabIndex = 3;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Roboto", 20F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label10.Location = new System.Drawing.Point(275, 9);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(262, 33);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "Tambah/Ubah Siswa";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // closeBtn
-            // 
-            this.closeBtn.FlatAppearance.BorderSize = 0;
-            this.closeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closeBtn.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeBtn.ForeColor = System.Drawing.Color.White;
-            this.closeBtn.Location = new System.Drawing.Point(758, 12);
-            this.closeBtn.Name = "closeBtn";
-            this.closeBtn.Size = new System.Drawing.Size(30, 30);
-            this.closeBtn.TabIndex = 7;
-            this.closeBtn.Text = "X";
-            this.closeBtn.UseVisualStyleBackColor = true;
-            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // label1
             // 
@@ -340,7 +339,7 @@
             this.saveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveBtn.ForeColor = System.Drawing.Color.White;
-            this.saveBtn.Location = new System.Drawing.Point(203, 580);
+            this.saveBtn.Location = new System.Drawing.Point(286, 580);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(113, 37);
             this.saveBtn.TabIndex = 28;
@@ -355,7 +354,7 @@
             this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBtn.ForeColor = System.Drawing.Color.White;
-            this.updateBtn.Location = new System.Drawing.Point(362, 580);
+            this.updateBtn.Location = new System.Drawing.Point(445, 580);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(113, 37);
             this.updateBtn.TabIndex = 29;
@@ -363,26 +362,11 @@
             this.updateBtn.UseVisualStyleBackColor = false;
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
-            // clearBtn
-            // 
-            this.clearBtn.BackColor = System.Drawing.Color.SteelBlue;
-            this.clearBtn.FlatAppearance.BorderSize = 0;
-            this.clearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearBtn.ForeColor = System.Drawing.Color.White;
-            this.clearBtn.Location = new System.Drawing.Point(511, 580);
-            this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(113, 37);
-            this.clearBtn.TabIndex = 30;
-            this.clearBtn.Text = "Clear";
-            this.clearBtn.UseVisualStyleBackColor = false;
-            // 
             // add_murid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 665);
-            this.Controls.Add(this.clearBtn);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.NIPtxt);
@@ -456,6 +440,5 @@
         private System.Windows.Forms.Label NIPtxt;
         private System.Windows.Forms.Button saveBtn;
         private System.Windows.Forms.Button updateBtn;
-        private System.Windows.Forms.Button clearBtn;
     }
 }
