@@ -59,5 +59,21 @@ namespace tugasAkhir
             wm.Show();
             this.Close();
         }
+
+        
+
+        private void nilaisiswaBtn_Click(object sender, EventArgs e)
+        {
+            nilaisiswa ns = new nilaisiswa();
+            ns.Show();
+            this.Close();
+        }
+
+        private void jadpelbtn_Click(object sender, EventArgs e)
+        {
+            jadpel jp = new jadpel();
+            jp.Show();
+            this.Close();
+        }
     }
 }

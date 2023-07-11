@@ -70,6 +70,12 @@
     <Compile Include="add_guru.Designer.cs">
       <DependentUpon>add_guru.cs</DependentUpon>
     </Compile>
+    <Compile Include="add_japel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_japel.Designer.cs">
+      <DependentUpon>add_japel.cs</DependentUpon>
+    </Compile>
     <Compile Include="add_murid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,12 @@
     </Compile>
     <Compile Include="delete_guru.Designer.cs">
       <DependentUpon>delete_guru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_jadpel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_jadpel.Designer.cs">
+      <DependentUpon>delete_jadpel.cs</DependentUpon>
     </Compile>
     <Compile Include="delete_siswacs.cs">
       <SubType>Form</SubType>
@@ -123,6 +135,12 @@
     </Compile>
     <Compile Include="hapus_staff.Designer.cs">
       <DependentUpon>hapus_staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jadpel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jadpel.Designer.cs">
+      <DependentUpon>jadpel.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -172,6 +190,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>tugasAkhirDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="tugasAkhirDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tugasAkhirDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tugasAkhirDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tugasAkhirDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tugasAkhirDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tugasAkhirDataSet12.xsd</DependentUpon>
+    </Compile>
     <Compile Include="tugasAkhirDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -202,6 +235,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>tugasAkhirDataSet7.xsd</DependentUpon>
     </Compile>
+    <Compile Include="tugasAkhirDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tugasAkhirDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tugasAkhirDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tugasAkhirDataSet9.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Wali_Murid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -220,6 +263,9 @@
     <EmbeddedResource Include="add_guru.resx">
       <DependentUpon>add_guru.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="add_japel.resx">
+      <DependentUpon>add_japel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="add_murid.resx">
       <DependentUpon>add_murid.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="delete_guru.resx">
       <DependentUpon>delete_guru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_jadpel.resx">
+      <DependentUpon>delete_jadpel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="delete_siswacs.resx">
       <DependentUpon>delete_siswacs.cs</DependentUpon>
@@ -246,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="hapus_staff.resx">
       <DependentUpon>hapus_staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jadpel.resx">
+      <DependentUpon>jadpel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -308,6 +360,39 @@
     </None>
     <None Include="tugasAkhirDataSet1.xss">
       <DependentUpon>tugasAkhirDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet10.xsc">
+      <DependentUpon>tugasAkhirDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tugasAkhirDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tugasAkhirDataSet10.xss">
+      <DependentUpon>tugasAkhirDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet11.xsc">
+      <DependentUpon>tugasAkhirDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tugasAkhirDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tugasAkhirDataSet11.xss">
+      <DependentUpon>tugasAkhirDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet12.xsc">
+      <DependentUpon>tugasAkhirDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tugasAkhirDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tugasAkhirDataSet12.xss">
+      <DependentUpon>tugasAkhirDataSet12.xsd</DependentUpon>
     </None>
     <None Include="tugasAkhirDataSet2.xsc">
       <DependentUpon>tugasAkhirDataSet2.xsd</DependentUpon>
@@ -374,6 +459,28 @@
     </None>
     <None Include="tugasAkhirDataSet7.xss">
       <DependentUpon>tugasAkhirDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet8.xsc">
+      <DependentUpon>tugasAkhirDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tugasAkhirDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tugasAkhirDataSet8.xss">
+      <DependentUpon>tugasAkhirDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet9.xsc">
+      <DependentUpon>tugasAkhirDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tugasAkhirDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tugasAkhirDataSet9.xss">
+      <DependentUpon>tugasAkhirDataSet9.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

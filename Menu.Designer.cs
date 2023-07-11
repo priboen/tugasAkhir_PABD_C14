@@ -41,7 +41,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.matapelBtn = new System.Windows.Forms.Button();
+            this.jadpelbtn = new System.Windows.Forms.Button();
             this.nilaisiswaBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -191,17 +191,18 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // matapelBtn
+            // jadpelbtn
             // 
-            this.matapelBtn.BackColor = System.Drawing.Color.SteelBlue;
-            this.matapelBtn.FlatAppearance.BorderSize = 0;
-            this.matapelBtn.ForeColor = System.Drawing.Color.White;
-            this.matapelBtn.Location = new System.Drawing.Point(267, 502);
-            this.matapelBtn.Name = "matapelBtn";
-            this.matapelBtn.Size = new System.Drawing.Size(176, 56);
-            this.matapelBtn.TabIndex = 12;
-            this.matapelBtn.Text = "MATA PELAJARAN";
-            this.matapelBtn.UseVisualStyleBackColor = false;
+            this.jadpelbtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.jadpelbtn.FlatAppearance.BorderSize = 0;
+            this.jadpelbtn.ForeColor = System.Drawing.Color.White;
+            this.jadpelbtn.Location = new System.Drawing.Point(217, 502);
+            this.jadpelbtn.Name = "jadpelbtn";
+            this.jadpelbtn.Size = new System.Drawing.Size(226, 56);
+            this.jadpelbtn.TabIndex = 12;
+            this.jadpelbtn.Text = "JADWAL PELAJARAN";
+            this.jadpelbtn.UseVisualStyleBackColor = false;
+            this.jadpelbtn.Click += new System.EventHandler(this.jadpelbtn_Click);
             // 
             // nilaisiswaBtn
             // 
@@ -214,6 +215,7 @@
             this.nilaisiswaBtn.TabIndex = 13;
             this.nilaisiswaBtn.Text = "NILAI SISWA";
             this.nilaisiswaBtn.UseVisualStyleBackColor = false;
+            this.nilaisiswaBtn.Click += new System.EventHandler(this.nilaisiswaBtn_Click);
             // 
             // MenuForm
             // 
@@ -222,7 +224,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(950, 569);
             this.Controls.Add(this.nilaisiswaBtn);
-            this.Controls.Add(this.matapelBtn);
+            this.Controls.Add(this.jadpelbtn);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -263,7 +265,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button matapelBtn;
+        private System.Windows.Forms.Button jadpelbtn;
         private System.Windows.Forms.Button nilaisiswaBtn;
     }
 }

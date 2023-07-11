@@ -38,12 +38,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.idNilaitxt = new System.Windows.Forms.TextBox();
             this.txtNilaiSiswa = new System.Windows.Forms.TextBox();
             this.cbxNISN = new System.Windows.Forms.ComboBox();
             this.cbxMapel = new System.Windows.Forms.ComboBox();
             this.saveBtn = new System.Windows.Forms.Button();
-            this.updateBtn = new System.Windows.Forms.Button();
+            this.ClearBtn = new System.Windows.Forms.Button();
+            this.idNilai = new System.Windows.Forms.Label();
+            this.NISNlabel = new System.Windows.Forms.Label();
+            this.idMapel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,15 +131,15 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(26, 165);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(211, 20);
+            this.label2.Size = new System.Drawing.Size(97, 20);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Nomor Induk Siswa Nasional";
+            this.label2.Text = "Nama Siswa";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 212);
+            this.label3.Location = new System.Drawing.Point(26, 247);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 20);
             this.label3.TabIndex = 7;
@@ -147,22 +149,15 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(26, 258);
+            this.label4.Location = new System.Drawing.Point(26, 293);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 20);
+            this.label4.Size = new System.Drawing.Size(161, 20);
             this.label4.TabIndex = 8;
-            this.label4.Text = "ID Mata Pelajaran";
-            // 
-            // idNilaitxt
-            // 
-            this.idNilaitxt.Location = new System.Drawing.Point(267, 117);
-            this.idNilaitxt.Name = "idNilaitxt";
-            this.idNilaitxt.Size = new System.Drawing.Size(424, 20);
-            this.idNilaitxt.TabIndex = 9;
+            this.label4.Text = "Nama Mata Pelajaran";
             // 
             // txtNilaiSiswa
             // 
-            this.txtNilaiSiswa.Location = new System.Drawing.Point(267, 212);
+            this.txtNilaiSiswa.Location = new System.Drawing.Point(267, 247);
             this.txtNilaiSiswa.Name = "txtNilaiSiswa";
             this.txtNilaiSiswa.Size = new System.Drawing.Size(424, 20);
             this.txtNilaiSiswa.TabIndex = 10;
@@ -174,14 +169,16 @@
             this.cbxNISN.Name = "cbxNISN";
             this.cbxNISN.Size = new System.Drawing.Size(218, 21);
             this.cbxNISN.TabIndex = 27;
+            this.cbxNISN.SelectedIndexChanged += new System.EventHandler(this.cbxNISN_SelectedIndexChanged);
             // 
             // cbxMapel
             // 
             this.cbxMapel.FormattingEnabled = true;
-            this.cbxMapel.Location = new System.Drawing.Point(267, 260);
+            this.cbxMapel.Location = new System.Drawing.Point(267, 295);
             this.cbxMapel.Name = "cbxMapel";
             this.cbxMapel.Size = new System.Drawing.Size(218, 21);
             this.cbxMapel.TabIndex = 28;
+            this.cbxMapel.SelectedIndexChanged += new System.EventHandler(this.cbxMapel_SelectedIndexChanged);
             // 
             // saveBtn
             // 
@@ -190,38 +187,69 @@
             this.saveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveBtn.ForeColor = System.Drawing.Color.White;
-            this.saveBtn.Location = new System.Drawing.Point(267, 339);
+            this.saveBtn.Location = new System.Drawing.Point(267, 374);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(113, 37);
             this.saveBtn.TabIndex = 29;
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = false;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
-            // updateBtn
+            // ClearBtn
             // 
-            this.updateBtn.BackColor = System.Drawing.Color.SteelBlue;
-            this.updateBtn.FlatAppearance.BorderSize = 0;
-            this.updateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.updateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateBtn.ForeColor = System.Drawing.Color.White;
-            this.updateBtn.Location = new System.Drawing.Point(459, 339);
-            this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(113, 37);
-            this.updateBtn.TabIndex = 30;
-            this.updateBtn.Text = "Update";
-            this.updateBtn.UseVisualStyleBackColor = false;
+            this.ClearBtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.ClearBtn.FlatAppearance.BorderSize = 0;
+            this.ClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ClearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearBtn.ForeColor = System.Drawing.Color.White;
+            this.ClearBtn.Location = new System.Drawing.Point(459, 374);
+            this.ClearBtn.Name = "ClearBtn";
+            this.ClearBtn.Size = new System.Drawing.Size(113, 37);
+            this.ClearBtn.TabIndex = 30;
+            this.ClearBtn.Text = "Clear";
+            this.ClearBtn.UseVisualStyleBackColor = false;
+            this.ClearBtn.Click += new System.EventHandler(this.updateBtn_Click);
+            // 
+            // idNilai
+            // 
+            this.idNilai.AutoSize = true;
+            this.idNilai.Location = new System.Drawing.Point(267, 117);
+            this.idNilai.Name = "idNilai";
+            this.idNilai.Size = new System.Drawing.Size(41, 13);
+            this.idNilai.TabIndex = 31;
+            this.idNilai.Text = "ID Nilai";
+            // 
+            // NISNlabel
+            // 
+            this.NISNlabel.AutoSize = true;
+            this.NISNlabel.Location = new System.Drawing.Point(267, 192);
+            this.NISNlabel.Name = "NISNlabel";
+            this.NISNlabel.Size = new System.Drawing.Size(33, 13);
+            this.NISNlabel.TabIndex = 32;
+            this.NISNlabel.Text = "NISN";
+            // 
+            // idMapel
+            // 
+            this.idMapel.AutoSize = true;
+            this.idMapel.Location = new System.Drawing.Point(264, 326);
+            this.idMapel.Name = "idMapel";
+            this.idMapel.Size = new System.Drawing.Size(92, 13);
+            this.idMapel.TabIndex = 33;
+            this.idMapel.Text = "ID Mata Pelajaran";
             // 
             // addNilai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 450);
-            this.Controls.Add(this.updateBtn);
+            this.Controls.Add(this.idMapel);
+            this.Controls.Add(this.NISNlabel);
+            this.Controls.Add(this.idNilai);
+            this.Controls.Add(this.ClearBtn);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.cbxMapel);
             this.Controls.Add(this.cbxNISN);
             this.Controls.Add(this.txtNilaiSiswa);
-            this.Controls.Add(this.idNilaitxt);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -252,11 +280,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox idNilaitxt;
         private System.Windows.Forms.TextBox txtNilaiSiswa;
         private System.Windows.Forms.ComboBox cbxNISN;
         private System.Windows.Forms.ComboBox cbxMapel;
         private System.Windows.Forms.Button saveBtn;
-        private System.Windows.Forms.Button updateBtn;
+        private System.Windows.Forms.Button ClearBtn;
+        private System.Windows.Forms.Label idNilai;
+        private System.Windows.Forms.Label NISNlabel;
+        private System.Windows.Forms.Label idMapel;
     }
 }
