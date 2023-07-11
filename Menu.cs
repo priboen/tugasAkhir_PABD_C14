@@ -52,5 +52,12 @@ namespace tugasAkhir
             mp.Show();
             this.Close();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Wali_Murid wm = new Wali_Murid();
+            wm.Show();
+            this.Close();
+        }
     }
 }

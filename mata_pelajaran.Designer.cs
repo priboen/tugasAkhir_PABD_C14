@@ -40,8 +40,8 @@
             this.matapelFormBtn = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tugasAkhirDataSet4 = new tugasAkhir.tugasAkhirDataSet4();
             this.matapelajaranBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tugasAkhirDataSet4 = new tugasAkhir.tugasAkhirDataSet4();
             this.mata_pelajaranTableAdapter = new tugasAkhir.tugasAkhirDataSet4TableAdapters.mata_pelajaranTableAdapter();
             this.idmapelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namamapelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,8 +49,8 @@
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tugasAkhirDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.matapelajaranBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tugasAkhirDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -136,7 +136,7 @@
             this.delMataPel.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delMataPel.ForeColor = System.Drawing.Color.White;
             this.delMataPel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.delMataPel.Location = new System.Drawing.Point(202, 18);
+            this.delMataPel.Location = new System.Drawing.Point(288, 18);
             this.delMataPel.Name = "delMataPel";
             this.delMataPel.Size = new System.Drawing.Size(186, 38);
             this.delMataPel.TabIndex = 2;
@@ -152,7 +152,7 @@
             this.matapelFormBtn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.matapelFormBtn.Location = new System.Drawing.Point(19, 18);
             this.matapelFormBtn.Name = "matapelFormBtn";
-            this.matapelFormBtn.Size = new System.Drawing.Size(166, 38);
+            this.matapelFormBtn.Size = new System.Drawing.Size(225, 38);
             this.matapelFormBtn.TabIndex = 0;
             this.matapelFormBtn.Text = "Tambah/Ubah Data Mata Pelajaran";
             this.matapelFormBtn.UseVisualStyleBackColor = false;
@@ -180,15 +180,15 @@
             this.dataGridView1.Size = new System.Drawing.Size(957, 296);
             this.dataGridView1.TabIndex = 0;
             // 
-            // tugasAkhirDataSet4
-            // 
-            this.tugasAkhirDataSet4.DataSetName = "tugasAkhirDataSet4";
-            this.tugasAkhirDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // matapelajaranBindingSource
             // 
             this.matapelajaranBindingSource.DataMember = "mata_pelajaran";
             this.matapelajaranBindingSource.DataSource = this.tugasAkhirDataSet4;
+            // 
+            // tugasAkhirDataSet4
+            // 
+            this.tugasAkhirDataSet4.DataSetName = "tugasAkhirDataSet4";
+            this.tugasAkhirDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // mata_pelajaranTableAdapter
             // 
@@ -196,20 +196,23 @@
             // 
             // idmapelDataGridViewTextBoxColumn
             // 
+            this.idmapelDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.idmapelDataGridViewTextBoxColumn.DataPropertyName = "id_mapel";
-            this.idmapelDataGridViewTextBoxColumn.HeaderText = "id_mapel";
+            this.idmapelDataGridViewTextBoxColumn.HeaderText = "ID Mata Pelajaran";
             this.idmapelDataGridViewTextBoxColumn.Name = "idmapelDataGridViewTextBoxColumn";
             // 
             // namamapelDataGridViewTextBoxColumn
             // 
+            this.namamapelDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.namamapelDataGridViewTextBoxColumn.DataPropertyName = "nama_mapel";
-            this.namamapelDataGridViewTextBoxColumn.HeaderText = "nama_mapel";
+            this.namamapelDataGridViewTextBoxColumn.HeaderText = "Nama Mata Pelajaran";
             this.namamapelDataGridViewTextBoxColumn.Name = "namamapelDataGridViewTextBoxColumn";
             // 
             // tingkatkelasDataGridViewTextBoxColumn
             // 
+            this.tingkatkelasDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.tingkatkelasDataGridViewTextBoxColumn.DataPropertyName = "tingkat_kelas";
-            this.tingkatkelasDataGridViewTextBoxColumn.HeaderText = "tingkat_kelas";
+            this.tingkatkelasDataGridViewTextBoxColumn.HeaderText = "Kelas";
             this.tingkatkelasDataGridViewTextBoxColumn.Name = "tingkatkelasDataGridViewTextBoxColumn";
             // 
             // mata_pelajaran
@@ -232,8 +235,8 @@
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tugasAkhirDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.matapelajaranBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tugasAkhirDataSet4)).EndInit();
             this.ResumeLayout(false);
 
         }

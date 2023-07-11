@@ -52,6 +52,12 @@
     <Compile Include="addMataPel.Designer.cs">
       <DependentUpon>addMataPel.cs</DependentUpon>
     </Compile>
+    <Compile Include="addWali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addWali.Designer.cs">
+      <DependentUpon>addWali.cs</DependentUpon>
+    </Compile>
     <Compile Include="add_guru.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="delete_siswacs.Designer.cs">
       <DependentUpon>delete_siswacs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delWali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delWali.Designer.cs">
+      <DependentUpon>delWali.cs</DependentUpon>
     </Compile>
     <Compile Include="Guru.cs">
       <SubType>Form</SubType>
@@ -157,8 +169,27 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>tugasAkhirDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="tugasAkhirDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tugasAkhirDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tugasAkhirDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tugasAkhirDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Wali_Murid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wali_Murid.Designer.cs">
+      <DependentUpon>Wali_Murid.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addMataPel.resx">
       <DependentUpon>addMataPel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addWali.resx">
+      <DependentUpon>addWali.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="add_guru.resx">
       <DependentUpon>add_guru.cs</DependentUpon>
@@ -174,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="delete_siswacs.resx">
       <DependentUpon>delete_siswacs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delWali.resx">
+      <DependentUpon>delWali.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Guru.resx">
       <DependentUpon>Guru.cs</DependentUpon>
@@ -208,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="staff_TU.resx">
       <DependentUpon>staff_TU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wali_Murid.resx">
+      <DependentUpon>Wali_Murid.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -272,6 +309,28 @@
     </None>
     <None Include="tugasAkhirDataSet4.xss">
       <DependentUpon>tugasAkhirDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet5.xsc">
+      <DependentUpon>tugasAkhirDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tugasAkhirDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tugasAkhirDataSet5.xss">
+      <DependentUpon>tugasAkhirDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet6.xsc">
+      <DependentUpon>tugasAkhirDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tugasAkhirDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tugasAkhirDataSet6.xss">
+      <DependentUpon>tugasAkhirDataSet6.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
