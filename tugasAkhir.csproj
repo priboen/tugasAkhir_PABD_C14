@@ -52,6 +52,12 @@
     <Compile Include="addMataPel.Designer.cs">
       <DependentUpon>addMataPel.cs</DependentUpon>
     </Compile>
+    <Compile Include="addNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addNilai.Designer.cs">
+      <DependentUpon>addNilai.cs</DependentUpon>
+    </Compile>
     <Compile Include="addWali.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,12 @@
     </Compile>
     <Compile Include="add_staff.Designer.cs">
       <DependentUpon>add_staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletelNilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletelNilai.Designer.cs">
+      <DependentUpon>deletelNilai.cs</DependentUpon>
     </Compile>
     <Compile Include="delete_guru.cs">
       <SubType>Form</SubType>
@@ -130,6 +142,12 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="nilaisiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nilaisiswa.Designer.cs">
+      <DependentUpon>nilaisiswa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="siswa.cs">
@@ -179,6 +197,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>tugasAkhirDataSet6.xsd</DependentUpon>
     </Compile>
+    <Compile Include="tugasAkhirDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tugasAkhirDataSet7.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Wali_Murid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +210,9 @@
     </Compile>
     <EmbeddedResource Include="addMataPel.resx">
       <DependentUpon>addMataPel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addNilai.resx">
+      <DependentUpon>addNilai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addWali.resx">
       <DependentUpon>addWali.cs</DependentUpon>
@@ -199,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="add_staff.resx">
       <DependentUpon>add_staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletelNilai.resx">
+      <DependentUpon>deletelNilai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="delete_guru.resx">
       <DependentUpon>delete_guru.cs</DependentUpon>
@@ -226,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nilaisiswa.resx">
+      <DependentUpon>nilaisiswa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -331,6 +363,17 @@
     </None>
     <None Include="tugasAkhirDataSet6.xss">
       <DependentUpon>tugasAkhirDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet7.xsc">
+      <DependentUpon>tugasAkhirDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="tugasAkhirDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tugasAkhirDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tugasAkhirDataSet7.xss">
+      <DependentUpon>tugasAkhirDataSet7.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
