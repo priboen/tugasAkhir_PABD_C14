@@ -68,7 +68,7 @@ namespace tugasAkhir
         {
             koneksi = new SqlConnection(stringConnection);
             koneksi.Open();
-            SqlCommand cmd = new SqlCommand("update guru set NIP=@NIP, nama_guru=@nama_guru, nohp_guru=@nohp_guru, jalan=@jalan, desa=@desa, kecamatan=@kecamatan, kota_madya=@kota_madya, kode_pos=@kode_pos", koneksi);
+            SqlCommand cmd = new SqlCommand("update guru set nama_guru=@nama_guru, nohp_guru=@nohp_guru, jalan=@jalan, desa=@desa, kecamatan=@kecamatan, kota_madya=@kota_madya, kode_pos=@kode_pos where NIP=@NIP", koneksi);
             cmd.Parameters.AddWithValue("@NIP", NIPtxt.Text);
             cmd.Parameters.AddWithValue("@nama_guru", namatxt.Text);
             cmd.Parameters.AddWithValue("@nohp_guru", hptxt.Text);

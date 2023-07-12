@@ -77,7 +77,7 @@ namespace tugasAkhir
         private void updateBtn_Click(object sender, EventArgs e)
         {
             koneksi.Open();
-            SqlCommand cmd = new SqlCommand("update wali_murid set NIK = @NIK, nama_wali = @nama_wali, pekerjaan = @pekerjaan, jalan = @jalan, desa = @desa, kecamatan = @kecamatan, kota_madya = @kota_madya, kode_pos = @kode_pos, status_wali = @status_wali, NISN = @NISN", koneksi);
+            SqlCommand cmd = new SqlCommand("update wali_murid set nama_wali = @nama_wali, pekerjaan = @pekerjaan, jalan = @jalan, desa = @desa, kecamatan = @kecamatan, kota_madya = @kota_madya, kode_pos = @kode_pos, status_wali = @status_wali, NISN = @NISN where NIK = @NIK", koneksi);
             cmd.Parameters.AddWithValue("@NIK", NIKtxt.Text);
             cmd.Parameters.AddWithValue("@nama_wali", nmWalitxt.Text);
             cmd.Parameters.AddWithValue("@pekerjaan", pekerjaanTxt.Text);

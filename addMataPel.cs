@@ -53,7 +53,7 @@ namespace tugasAkhir
         {
             koneksi = new SqlConnection(stringConnection);
             koneksi.Open();
-            SqlCommand cmd = new SqlCommand("update mata_pelajaran set id_mapel=@id_mapel, nama_mapel=@nama_mapel, tingkat_kelas=@tingkat_kelas", koneksi);
+            SqlCommand cmd = new SqlCommand("update mata_pelajaran set nama_mapel=@nama_mapel, tingkat_kelas=@tingkat_kelas where id_mapel=@id_mapel", koneksi);
             cmd.Parameters.AddWithValue("@id_mapel", IDtxt.Text);
             cmd.Parameters.AddWithValue("@nama_mapel", namapeltxt.Text);
             cmd.Parameters.AddWithValue("@tingkat_kelas", kelastxt.Text);
