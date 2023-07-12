@@ -73,6 +73,7 @@
             this.closeBtn.TabIndex = 7;
             this.closeBtn.Text = "X";
             this.closeBtn.UseVisualStyleBackColor = true;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // label10
             // 

@@ -82,5 +82,12 @@ namespace tugasAkhir
             else
                 this.Show();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            sendcode sc = new sendcode();
+            this.Hide();
+            sc.Show();
+        }
     }
 }

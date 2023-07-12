@@ -25,6 +25,8 @@ namespace tugasAkhir
         private void clsbtn_Click(object sender, EventArgs e)
         {
             this.Dispose();
+            MenuForm mf = new MenuForm();
+            mf.ShowDialog();
         }
         private void cbNamaTU()
         {

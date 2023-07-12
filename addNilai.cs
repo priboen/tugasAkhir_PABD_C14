@@ -143,5 +143,12 @@ namespace tugasAkhir
             txtNilaiSiswa.Text = "";
 
         }
+
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            nilaisiswa ns = new nilaisiswa();
+            ns.Show();
+        }
     }
 }
