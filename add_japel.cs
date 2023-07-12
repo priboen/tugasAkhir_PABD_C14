@@ -136,7 +136,7 @@ namespace tugasAkhir
         {
             koneksi = new SqlConnection(stringConnection);
             koneksi.Open();
-            SqlCommand cmd = new SqlCommand("update jadwal_pelajaran set nama_mapel = @nama_mapel, id_mapel = @id_mapel, tingkat_pelajaran = @tingkat_pelajaran, hari = @hari, jam = @jam, NIP = @NIP where id_jadwal = @id_jadwal)", koneksi);
+            SqlCommand cmd = new SqlCommand("update jadwal_pelajaran set nama_mapel = @nama_mapel, id_mapel = @id_mapel, tingkat_pelajaran = @tingkat_pelajaran, hari = @hari, jam = @jam, NIP = @NIP where id_jadwal = @id_jadwal", koneksi);
             cmd.Parameters.AddWithValue("@id_jadwal", IdJPTXT.Text);
             cmd.Parameters.AddWithValue("@nama_mapel", cbxNamaMapel.Text);
             cmd.Parameters.AddWithValue("@id_mapel", idMapel.Text);
